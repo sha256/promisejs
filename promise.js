@@ -92,7 +92,12 @@
 
             for (var k in data) {
                 if (data.hasOwnProperty(k)) {
-                    params.push(e(k) + '=' + e(data[k]));
+                    if (data[k].constructor === Array){
+                        for (i = 0; i < data[k].length; i += 1) {
+							params.push(e(k) + '=' + data[k][i]);
+						}
+                    } else
+                        params.push(e(k) + '=' + e(data[k]));
                 }
             }
             payload = params.join('&')
