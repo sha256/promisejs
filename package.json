@@ -1,0 +1,23 @@
+{
+  "name": "promisejs",
+  "description": "Lightweight javascript implementation of promises.",
+  "version": "0.1",
+  "main": "promise.js",
+  "contributors": [
+    {
+      "name": "Pierre",
+      "email": "stackp@online.fr",
+      "web": "https://github.com/stackp"
+    }
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/sha256/promisejs"
+  },
+  "licenses": [
+    {
+      "name": "BSD LIcense",
+      "url": ""
+    }
+  ]
+}
