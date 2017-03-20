@@ -1,7 +1,7 @@
 {
   "name": "promisejs",
   "description": "Lightweight javascript implementation of promises.",
-  "version": "0.1",
+  "version": "0.1.0",
   "main": "promise.js",
   "contributors": [
     {
