@@ -194,6 +194,7 @@
         post: _ajaxer('POST'),
         put: _ajaxer('PUT'),
         del: _ajaxer('DELETE'),
+	encode: _encode,    
 
         /* Error codes */
         ENOXHR: 1,
