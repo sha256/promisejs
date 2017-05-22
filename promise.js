@@ -84,7 +84,7 @@
 
     function _encode(data) {
         var payload = "";
-        if (typeof data === "string") {
+        if (typeof data === "string" || data instanceof FormData) {
             payload = data;
         } else {
             var e = encodeURIComponent;
@@ -150,7 +150,9 @@
                     xhr.setRequestHeader(h, headers[h]);
             }
         }
-        xhr.setRequestHeader('Content-type', content_type);
+	
+	if (headers['content-type'] != false)    
+        	xhr.setRequestHeader('Content-type', content_type);
 
 
         function onTimeout() {
